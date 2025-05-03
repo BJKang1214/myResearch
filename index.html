@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research Lab</title>
+    <title>BJ Kang Research Story</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,24 +12,29 @@
             line-height: 1.6;
         }
         header {
+            width: 100vw;
+            height: 15vh;
             background: #000;
             color: #fff;
             padding: 0;
             text-align: center;
         }
         nav {
-            font-family: Arial Black;
+            width: 100vw;
+            height: 2.5vh;
+            font-family: Arial;
             background: #f4f4f4;
             padding: 1rem;
             text-align: center;
+            font-size: 1.8vh;
         }
         nav a {
-            margin: 0 3rem;
+            margin: 0 2rem;
             text-decoration: none;
             color: #555;
         }
         section {
-            padding: 2rem;
+            padding: 3vh;
             border-bottom: 1px solid #ddd;
         }
         footer {
@@ -39,111 +44,127 @@
             padding: 0.5rem 0;
         }
         h1 {
-          font-size: 2rem;
+          font-size: min(2.0vw, 3.552vh);
           color: #fff;
-          margin-top: 20px;
+          margin-top: 1.5vh;
         }
         h2 {
-          font-size: 1.5rem;
+          font-size: min(1.8vw, 3.19vh);
           color: #19346a;
-          margin: 10px 0;
         }
         h3 {
-          font-size: 1.2rem;
-          padding-left: 10px;
-          margin-top: 25px;
+          font-size: min(1.6vw, 2.83vh);
+          padding-left: 1.5vw;
+          margin-top: 1vh;
         }
         span {
-          font-size: 1.1rem;
+          font-size: min(1.5vw, 2.664vh);
         }
         p {
-          font-size: 1rem;
-          padding-left: 10px;
+          font-size: min(1.3vw, 2.21vh);
+          padding-left: 1vw;
+        }
+        ul {
+          font-size: min(1.3vw, 2.21vh);
+          margin-left: 2vw;
+        }
+        li {
+          font-size: min(1.3vw, 2.21vh);
+          margin-left: 2vw;
         }
         .container {
             display: flex;
             <!-- border: 1px solid #ccc; -->
-            padding-left: 10px;
-            width: 1800px;
-            height: 180px;
+            padding-left: 0.2vw;
+            width: 100vw;
+            height: auto;
             <!-- box-shadow: 0 4px 8px rgba(0,0,0,0.1); -->
         }
         .photo {
             width: 10%;
-            margin-top: 20px;
-            margin-right: 20px;
+            height: auto
+            margin-top: 1.5vh;
+            margin-right: 1vw;
         }
         .photo img {
             width: 100%;
             height: 100%;
-            border-radius: 10px;
+            border-radius: 0.5rem;
         }
         .profile {
             width: 90%;
-            margin-top: 35px
+            margin-top: 1.5vh
         }
         .profile h1 {
-            font-size: 1.2rem;
-            color: #19346a;
-            margin-top: 0;
+            font-size: min(1.5vw, 2.55vh);
+            color: #023c71;
+            margin-left: 2vw;
+            margin-top: 1vh;
         }
         .profile p {
+            font-size: min(1.3vw, 2.21vh);
             line-height: 1.5;
+            margin-left: 1vw;
         }
         .container_r {
             display: flex;
             <!-- border: 1px solid #ccc; -->
-            padding-left: 10px;
-            width: 1800px;
-            height: 450px;
+            padding-left: 0.2vw;
+            width: 92vw;
+            height: auto;
             <!-- box-shadow: 0 4px 8px rgba(0,0,0,0.1); -->
         }
         .figure {
             width: 30%;
-            margin-top: 20px;
-            margin-right: 20px;
+            height: auto
+            margin-top: 1.5vh;
+            margin-right: 1vw;
         }
         .figure img {
             width: 100%;
-            height: 100%;
-            border-radius: 10px;
+            height: 75%;
+            margin-top: 5vh;
+            border-radius: 0.5rem;
         }
         .descript {
             width: 70%;
-            margin-top: 35px
+            margin-top: 1.5vh
         }
         .descript h1 {
-            font-size: 1.2rem;
-            color: #19346a;
-            margin-top: 0;
+            font-size: min(1.5vw, 2.55vh);
+            color: #023c71;
+            margin-left: 2vw;
+            margin-top: 1vh;
         }
         .descript p {
+            font-size: min(1.3vw, 2.21vh);
             line-height: 1.5;
+            margin-left: 1vw;
         }
         .tab-container {
             width: 100%;
-            max-width: 2000px;
-            margin-top: 10px;
-            margin-left: 20px;
+            max-width: 100vw;
+            margin-top: 2vh;
+            margin-left: 3vw;
         }
         .tab {
-            padding: 0px;
+            padding: 0.5vw;
             cursor: grab;
             display: flex;
             justify-content: left;
             align-items: center;
-            margin-top: 20px;
-            margin-bottom: 10px;
+            margin-top: 2vh;
+            margin-bottom: 2vh;
         }
         .triangle-button {
             width: 0;
             height: 0;
-            border-left: 12px solid transparent;
-            border-right: 12px solid transparent;
-            border-top: 12px solid #333;
+            border-left: 1vh solid transparent;
+            border-right: 1vh solid transparent;
+            border-top: 1vh solid #333;
             cursor: pointer;
             transition: transform 0.2s;
-            margin-left: 15px;
+            margin-left: 2vw;
         }
         .rotated {
             transform: rotate(180deg);
@@ -152,16 +173,16 @@
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.3s ease-out;
-            padding: 0 10px;
+            padding: 0 1vh;
             <!border: 1px solid #ccc;!>
             background-color: #ffffff;
         }
         .content.open {
-            max-height: 1500px;
+            max-height: 100vh;
             padding: 0 10 0 10px;
         }
         .drop-zone {
-            min-height: 50px;
+            min-height: 20vh;
             border: 1px dashed #999;
             padding: 10px;
             margin-top: 10px;
@@ -170,7 +191,7 @@
 </head>
 <body>
     <header>
-        <img src="logo_t.png" height="200" width="805">
+        <img src="logo_t.png" height=100% width=auto>
     </header>
     <nav>
         <a href="#home">About Me</a>
@@ -197,7 +218,7 @@
                         <img src="AURAdepth.jpg" alt="AURADepth">
                     </div>
                     <div class="profile">
-                        <p style="color: #023c71; font-size: 1.05rem;"><b>AURA-Depth: Attention-based Uncertainty Reduction and Feature Aggregation Depth Network</b><p>
+                        <p style="color: #023c71; font-size: min(1.5vw, 2.55vh);"><b>AURA-Depth: Attention-based Uncertainty Reduction and Feature Aggregation Depth Network</b><p>
                         <p><I>Youngtak Na, Sungho Woo, Soonyoung Lee, <b>Byung Jun Kang*</b></I>
                         <br>IEEE Access, Vol. 13, pp. 58600-58611, <br>2025 <a href="https://doi.org/10.1109/ACCESS.2025.3556062">[link]</a></p>
                     </div>
@@ -207,7 +228,7 @@
                         <img src="SoccerCLIP.jpg" alt="SoccerCLIP">
                     </div>
                     <div class="profile">
-                        <p style="color: #023c71; font-size: 1.05rem;"><b>Soccer-CLIP : Vision Language model for Soccer Action Spotting</b><p>
+                        <p style="color: #023c71; font-size: min(1.5vw, 2.55vh);"><b>Soccer-CLIP : Vision Language model for Soccer Action Spotting</b><p>
                         <p><I>Yoonho Shin, Sanghoon Park, Youngsub Han, Byoung-ki Jeon, Soonyoung Lee, <b>Byung Jun Kang*</b></I>
                         <br>IEEE Access, Vol. 13, pp. 44354-44365, <br>2025 <a href="https://doi.org/10.1109/ACCESS.2025.3549293">[link]</a></p>
                     </div>
@@ -252,7 +273,7 @@
                         <img src="k_Memseg.jpg" alt="K-means based MemSeg">
                     </div>
                     <div class="profile">
-                        <p style="color: #023c71; font-size: 1.05rem;"><b>Banknote Fitness Judgment System Using MemSeg Based on K-Means Memory Update</b><p>
+                        <p style="color: #023c71; font-size: min(1.5vw, 2.55vh);"><b>Banknote Fitness Judgment System Using MemSeg Based on K-Means Memory Update</b><p>
                         <p><I>Hui-Jae Bae, Dae-Sik Jung*, <b>Byung Jun Kang*</b></I>
                         <br>International Conference on Electronics, Information, and Communication (ICEIC 2025) <br>Jan. 19~22, 2025 <a href="https://ieeexplore.ieee.org/abstract/document/10879726">[link]</a></p>
                     </div>
@@ -262,7 +283,7 @@
                         <img src="ReconPatch.jpg" alt="ReconPatch">
                     </div>
                     <div class="profile">
-                        <p style="color: #023c71; font-size: 1.05rem;"><b>ReConPatch : Contrastive Patch Representation Learning for Industrial Anomaly Detection</b><p>
+                        <p style="color: #023c71; font-size: min(1.5vw, 2.55vh);"><b>ReConPatch : Contrastive Patch Representation Learning for Industrial Anomaly Detection</b><p>
                         <p><I>Jeeho Hyun, Sangyun Kim, Giyoung Jeon, Seung Hwan Kim, Kyunghoon Bae, <b>Byung Jun Kang*</b></I>
                         <br>IEEE/CVF Winter Conference on Applications of Computer Vision (WACV 2024) <br>Jan. 4~8, 2024 <a href="https://ieeexplore.ieee.org/document/10483692">[link]</a></p>
                     </div>
