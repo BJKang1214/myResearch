@@ -26,7 +26,7 @@
             background: #f4f4f4;
             padding: 1rem;
             text-align: center;
-            font-size: 1.8vh;
+            font-size: min(2.2vw, 2.2vh);
         }
         nav a {
             margin: 0 2rem;
@@ -44,44 +44,44 @@
             padding: 0.5rem 0;
         }
         h1 {
-          font-size: min(2.0vw, 3.552vh);
+          font-size: min(2.2vw, 3.552vh);
           color: #fff;
           margin-top: 1.5vh;
         }
         h2 {
-          font-size: min(1.8vw, 3.19vh);
+          font-size: min(2.0vw, 3.19vh);
           color: #19346a;
         }
         h3 {
-          font-size: min(1.6vw, 2.83vh);
+          font-size: min(1.8vw, 2.83vh);
           padding-left: 1.5vw;
           margin-top: 1vh;
         }
         span {
-          font-size: min(1.5vw, 2.664vh);
+          font-size: min(1.7vw, 2.664vh);
         }
         p {
-          font-size: min(1.3vw, 2.21vh);
+          font-size: min(1.7vw, 2.664vh);
           padding-left: 1vw;
         }
         ul {
-          font-size: min(1.3vw, 2.21vh);
+          font-size: min(1.7vw, 2.664vh);
           margin-left: 2vw;
         }
         li {
-          font-size: min(1.3vw, 2.21vh);
+          font-size: min(1.7vw, 2.664vh);
           margin-left: 2vw;
         }
         .container {
             display: flex;
             <!-- border: 1px solid #ccc; -->
             padding-left: 0.2vw;
-            width: 100vw;
+            width: 92vw;
             height: auto;
             <!-- box-shadow: 0 4px 8px rgba(0,0,0,0.1); -->
         }
         .photo {
-            width: 10%;
+            width: 20%;
             height: auto
             margin-top: 1.5vh;
             margin-right: 1vw;
@@ -92,17 +92,18 @@
             border-radius: 0.5rem;
         }
         .profile {
-            width: 90%;
+            width: 80%;
+            height: auto
             margin-top: 1.5vh
         }
         .profile h1 {
-            font-size: min(1.5vw, 2.55vh);
+            font-size: min(1.8vw, 2.83vh);
             color: #023c71;
             margin-left: 2vw;
             margin-top: 1vh;
         }
         .profile p {
-            font-size: min(1.3vw, 2.21vh);
+            font-size: min(1.7vw, 2.664vh);
             line-height: 1.5;
             margin-left: 1vw;
         }
@@ -116,28 +117,28 @@
         }
         .figure {
             width: 30%;
-            height: auto
             margin-top: 1.5vh;
             margin-right: 1vw;
         }
         .figure img {
             width: 100%;
-            height: 75%;
+            height: 70%;
             margin-top: 5vh;
             border-radius: 0.5rem;
         }
         .descript {
-            width: 70%;
+            width: 75%;
+            height: auto
             margin-top: 1.5vh
         }
         .descript h1 {
-            font-size: min(1.5vw, 2.55vh);
+            font-size: min(1.8vw, 2.83vh);
             color: #023c71;
             margin-left: 2vw;
             margin-top: 1vh;
         }
         .descript p {
-            font-size: min(1.3vw, 2.21vh);
+            font-size: min(1.7vw, 2.664vh);
             line-height: 1.5;
             margin-left: 1vw;
         }
@@ -191,7 +192,7 @@
 </head>
 <body>
     <header>
-        <img src="logo_t.png" height=100% width=auto>
+        <img src="logo_t.png" height=95% width=auto>
     </header>
     <nav>
         <a href="#home">About Me</a>
@@ -218,7 +219,7 @@
                         <img src="AURAdepth.jpg" alt="AURADepth">
                     </div>
                     <div class="profile">
-                        <p style="color: #023c71; font-size: min(1.5vw, 2.55vh);"><b>AURA-Depth: Attention-based Uncertainty Reduction and Feature Aggregation Depth Network</b><p>
+                        <p style="color: #023c71; font-size: min(1.8vw, 2.83vh);"><b>AURA-Depth: Attention-based Uncertainty Reduction and Feature Aggregation Depth Network</b><p>
                         <p><I>Youngtak Na, Sungho Woo, Soonyoung Lee, <b>Byung Jun Kang*</b></I>
                         <br>IEEE Access, Vol. 13, pp. 58600-58611, <br>2025 <a href="https://doi.org/10.1109/ACCESS.2025.3556062">[link]</a></p>
                     </div>
@@ -228,7 +229,7 @@
                         <img src="SoccerCLIP.jpg" alt="SoccerCLIP">
                     </div>
                     <div class="profile">
-                        <p style="color: #023c71; font-size: min(1.5vw, 2.55vh);"><b>Soccer-CLIP : Vision Language model for Soccer Action Spotting</b><p>
+                        <p style="color: #023c71; font-size: min(1.8vw, 2.83vh);"><b>Soccer-CLIP : Vision Language model for Soccer Action Spotting</b><p>
                         <p><I>Yoonho Shin, Sanghoon Park, Youngsub Han, Byoung-ki Jeon, Soonyoung Lee, <b>Byung Jun Kang*</b></I>
                         <br>IEEE Access, Vol. 13, pp. 44354-44365, <br>2025 <a href="https://doi.org/10.1109/ACCESS.2025.3549293">[link]</a></p>
                     </div>
@@ -273,7 +274,7 @@
                         <img src="k_Memseg.jpg" alt="K-means based MemSeg">
                     </div>
                     <div class="profile">
-                        <p style="color: #023c71; font-size: min(1.5vw, 2.55vh);"><b>Banknote Fitness Judgment System Using MemSeg Based on K-Means Memory Update</b><p>
+                        <p style="color: #023c71; font-size: min(1.8vw, 2.83vh);"><b>Banknote Fitness Judgment System Using MemSeg Based on K-Means Memory Update</b><p>
                         <p><I>Hui-Jae Bae, Dae-Sik Jung*, <b>Byung Jun Kang*</b></I>
                         <br>International Conference on Electronics, Information, and Communication (ICEIC 2025) <br>Jan. 19~22, 2025 <a href="https://ieeexplore.ieee.org/abstract/document/10879726">[link]</a></p>
                     </div>
@@ -283,7 +284,7 @@
                         <img src="ReconPatch.jpg" alt="ReconPatch">
                     </div>
                     <div class="profile">
-                        <p style="color: #023c71; font-size: min(1.5vw, 2.55vh);"><b>ReConPatch : Contrastive Patch Representation Learning for Industrial Anomaly Detection</b><p>
+                        <p style="color: #023c71; font-size: min(1.8vw, 2.83vh);"><b>ReConPatch : Contrastive Patch Representation Learning for Industrial Anomaly Detection</b><p>
                         <p><I>Jeeho Hyun, Sangyun Kim, Giyoung Jeon, Seung Hwan Kim, Kyunghoon Bae, <b>Byung Jun Kang*</b></I>
                         <br>IEEE/CVF Winter Conference on Applications of Computer Vision (WACV 2024) <br>Jan. 4~8, 2024 <a href="https://ieeexplore.ieee.org/document/10483692">[link]</a></p>
                     </div>
